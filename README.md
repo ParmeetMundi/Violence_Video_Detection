@@ -5,7 +5,7 @@ It contain 2000 video clips with 1000 of Violence Catagory and 1000 of Non-Viole
 </br>
 # Preprocessing
 20 Frame are extracted from each video at equal intervals and store in disk</br>
-As data is given to model we have to store which frame are extracted from which video, to do this list is created with paths of frame and stored</br>
+As data is given to model we have to store which frame are extracted from which video, to do this list is created with paths of frames and stored in disk</br>
 </br>
 # Model 
 First, batch generator is created to fetch images from disk and to give to model in batches of size 32</br>
@@ -34,3 +34,15 @@ self_model.add(layers.Dense(100,activation="relu"))</br>
 self_model.add(layers.Dense(1,activation="sigmoid"))</br>
 self_model.build()</br>
 </br>
+
+# Results
+After 50 Epoches</br>
+Training loss: 0.0230</br> 
+Training accuracy: 0.9912 </br>
+val_loss: 0.4305 </br>
+val_accuracy: 0.9025</br>
+</br>
+precision: [0.90862944, 0.89655172]</br>
+recall: [0.895 ,0.91 ]</br>
+fscore: [0.90176322, 0.90322581]</br>
+support: [200, 200]</br>
