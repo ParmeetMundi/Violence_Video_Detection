@@ -7,7 +7,7 @@ It contain 2000 video clips with 1000 of Violence Catagory and 1000 of Non-Viole
 20 Frame are extracted from each video at equal intervals and store in disk</br>
 As data is given to model we have to store which frame are extracted from which video, to do this list is created with paths of frames and stored in disk</br>
 </br>
-# Model 
+# Model (CNN + LSTM )
 First, batch generator is created to fetch images from disk and to give to model in batches of size 32</br>
 </br>
 Model->(Tried other combination but this one has given good results)
